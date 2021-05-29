@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .App {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(/images/bg1.svg);
+      }
+      .common1 {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .myRowCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card1 {
+        background-color: #fff7df;
+        height: 15vw;
+        width: 15vw;
+        border-radius: 10px;
+      }
+      .width1 {
+        min-width: 80vw;
+      }
+      .alignEvenly {
+        justify-content: space-between;
+      }
+      .card2 {
+        background-color: #e4ebff;
+      }
+      .card3 {
+        background-color: #d4f4f3;
+      }
+      .card4 {
+        background-color: #ffe1d6;
+      }
+      .temp1 {
+        display: flex;
+        align-items: flex-end;
+      }
+      .pcard2 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.45);
+        height: 40vh;
+        border-radius: 20px;
+      }
+      .pcard3 {
+        justify-content: space-around;
+      }
+      .jcard {
+        background-color: #e3def6;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 20px;
+      }
+      .jmargin {
+        padding: 10px;
+      }
+      .bgImage {
+        position: absolute;
+        z-index: -2;
+      }
+      .myCol {
+        display: flex;
+        flex-direction: column;
+      }
+      .jobTitle {
+        color: #00397a;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .count1 {
+        color: #664fb3;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .myDate {
+        color: gray;
+        margin-top: 20px;
+        font-size: 12px;
+      }
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      input:checked + .slider {
+        background-color: #21f360;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #21f360;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      .mySwitch{
+        height:35px;width:60px;
+      }
+      .expMessage{
+        color: gray;
+        font-size: 12px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="App"
+      style="
+        background-image: url(images/bg1.svg);
+        background-repeat: no-repeat;
+        z-index: -2;
+      "
+    >
+      <div class="common1 mt-5">
+        <div class="myRowCenter width1 alignEvenly mt-5">
+          <div class="card1 temp1">
+            <div class="mb-3 ml-1">Total Campaigns Done</div>
+          </div>
+          <div class="card1 card2 temp1">
+            <div class="mb-3 ml-1">Total Campaigns Active</div>
+          </div>
+          <div class="card1 card3 temp1">
+            <div class="mb-3 ml-1">Total Onboardings Done</div>
+          </div>
+          <div class="card1 card4 temp1">
+            <div class="mb-3 ml-1">Overall Onboardings Live</div>
+          </div>
+        </div>
+        <div class="width1 pcard2 mt-5"></div>
+        <div class="width1 pcard2 mt-5 mb-5 myRowCenter pcard3">
+          <div style="margin-left: 30px">
+            <div class="jobTitle">Jio Field Executive</div>
+            <div style="color: red">8764</div>
+            <br />
+            <div class="myRowCenter" style="justify-content: flex-start">
+              <div class="myCol">
+                <div class="myRowCenter" style="justify-content: left">
+                  <div><img src="images/Group 302.svg" alt="1" /></div>
+                  <div class="mr-5 ml-4">Pune</div>
+                </div>
+                <div class="myRowCenter mt-2" style="justify-content: left">
+                  <div><img src="images/Group 303.svg" alt="1" /></div>
+                  <div class="ml-4">English</div>
+                </div>
+              </div>
+              <div class="myCol">
+                <div class="myRowCenter" style="justify-content: left">
+                  <div><img src="images/Group 306.svg" alt="1" /></div>
+                  <div class="mr-5 ml-4">Maharashtra</div>
+                </div>
+                <div class="myRowCenter mt-2" style="justify-content: left">
+                  <div><img src="images/Group 305.svg" alt="1" /></div>
+                  <div class="ml-4">Bachelors</div>
+                </div>
+              </div>
+              <div class="myCol">
+                <div class="myRowCenter" style="justify-content: left">
+                  <div><img src="images/Group 307.svg" alt="1" /></div>
+                  <div class="ml-4">890076</div>
+                </div>
+                <div class="myRowCenter mt-2" style="justify-content: left">
+                  <div><img src="images/Group 308.svg" alt="1" /></div>
+                  <div class="ml-4">AX8766KL</div>
+                </div>
+              </div>
+            </div>
+            <div class="myRowCenter mt-2" style="justify-content: left">
+              <div class><img src="images/Group 308.svg" alt="1" /></div>
+              <div class="ml-4">
+                I am working as a delivery executive with two years of work
+                experience
+              </div>
+            </div>
+
+            <div class="myDate">2nd May 12:10:30 PM</div>
+          </div>
+          <div class="myRowCenter">
+            <div class="jcard pt-3">
+              <div class="pt-2 pl-2 count1">476</div>
+              <div class="pb-2 pl-2 pr-4">Data Base</div>
+            </div>
+            <div>
+              <div class="jcard pt-3">
+                <div class="pt-2 pl-2 count1">423</div>
+                <div class="pb-2 pl-2 pr-4">Response</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="myRowCenter">
+              <label class="switch mySwitch">
+                <input type="checkbox" style="position:relative; top:10px; left:10px" checked />
+                <span class="slider round"></span>
+              </label>
+              <div class="ml-3">Active</div>
+            </div>
+            <div class="expMessage">Expires in 5 days</div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
